@@ -53,7 +53,8 @@ header {
   border-radius: 16px;
 }
 .hero {
-  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
 }
 .hero-flex {
   display: flex;
@@ -143,11 +144,13 @@ header {
 }
 
 .action-box {
-  width: 60%;
+  background-color: #fff;
+  position: relative;
+  width: 50%;
   margin: 0 auto;
-  margin-bottom: -50px;
+  margin-bottom: -80px;
   text-align: center;
-  box-shadow: 2px 5px 6px rgba($GrayishBlue, 0.4);
+  box-shadow: 0 2px 6px rgba($GrayishBlue, 0.4);
   border-radius: 12px;
   padding: 60px 0;
   vertical-align: middle;
@@ -169,7 +172,7 @@ header {
 footer {
   z-index: 0;
   background-color: $VeryDarkCyan;
-  padding-top: 100px;
+  padding: 180px 0 60px;
   color: $VeryPaleCyan;
 }
 
@@ -218,18 +221,92 @@ footer {
 }
 
 .copyright {
-  float: right;
+  text-align: right;
   padding: 15px 0;
 }
 
-.social li {
+.icon-circle {
   color: white;
   border: 1px solid $VeryPaleCyan;
-  padding: 5px;
-  margin: 10px;
-  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
-.fa {
-  padding: 5px;
-  color: $VeryPaleCyan;
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  // .header-flex {
+  //   flex-direction: column;
+  //   margin: 0 auto;
+  //   justify-content: center;
+  // }
+  // .head-btn {
+  //   margin-top: 15px;
+  // }
+  .hero-flex {
+    flex-direction: column;
+  }
+  .hero-left {
+    width: 80%;
+    padding: 0;
+  }
+  .hero-right {
+    width: 80%;
+  }
+  .hero-left h1 {
+    padding-right: 0;
+    font-size: 26px;
+  }
+  .feature-flex {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .feature-left {
+    width: 90%;
+  }
+
+  .feature-right {
+    width: 90%;
+  }
+
+  .action-box {
+    width: 80%;
+    padding: 30px 0;
+    h2 {
+      font-size: 24px;
+      width: 90%;
+    }
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-logo {
+    padding-bottom: 15px;
+  }
+  .footer-box {
+    width: 100%;
+  }
+  .inline p {
+    text-align: left;
+  }
+  .links li {
+    padding: 5px 0;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .social {
+    padding: 15px 0;
+  }
 }
