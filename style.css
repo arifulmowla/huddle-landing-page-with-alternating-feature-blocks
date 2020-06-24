@@ -14,7 +14,6 @@ body {
 }
 
 .wrapper {
-  min-height: 100vh;
   background-image: url(./images/bg-hero-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,7 +228,7 @@ footer {
 
 .inline img {
   width: 30px;
-  padding: 10px 30px;
+  padding: 10px 30px 0 0;
 }
 
 .inline p {
